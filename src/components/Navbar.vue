@@ -14,7 +14,7 @@
         </ul>
       </div>
       <div class="navigation-button">
-        <button class="view-portfolio">View Portfolio</button>
+        <button class="view-portfolio"><a href="#">View Portfolio</a></button>
       </div>
     </div>
   </nav>
@@ -94,6 +94,11 @@
   padding-left: 120px;
 }
 
+.view-portfolio a{
+  text-decoration: none;
+  color: white;
+
+}
 .view-portfolio {
   background-color: #249cff;
   color: white;
