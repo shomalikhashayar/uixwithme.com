@@ -1,5 +1,7 @@
 # uixwithme.com
 
+uixwithme.com is a online learning platform that offers various courses for UI/UX Design Development.
+
 ## Project setup
 ```
 npm install
