@@ -100,7 +100,7 @@
 
 }
 .view-portfolio {
-  background-color: #249cff;
+  background-color: #8d99ae;
   color: white;
   border: none;
   border-radius: 4px;
@@ -110,6 +110,6 @@
 }
 
 .view-portfolio:hover {
-  background-color: #2289ff;
+  background-color: #616772;
 }
 </style>
