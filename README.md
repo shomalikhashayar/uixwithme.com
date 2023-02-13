@@ -3,7 +3,7 @@
 uixwithme.com is a online learning platform that offers various courses for UI/UX Design Development.
 
 ### Check out Real Project on the web.
-- [view online the project in GitHub](https://uixwithme.com)
+- [view online the project](https://uixwithme.com)
 
 ## Project setup
 ```
