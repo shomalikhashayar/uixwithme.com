@@ -108,7 +108,7 @@ import Navbar from "./components/Navbar.vue";
 }
 
 .hero-section-content #second {
-  opacity: 0.2;
+  color: rgba(255, 255, 255, 0.644)
 }
 
 .hero-section-image-buttons {
