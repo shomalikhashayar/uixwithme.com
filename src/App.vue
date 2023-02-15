@@ -3,7 +3,7 @@
   <div class="hero-section">
     <div class="hero-section-content">
       <h1>An excellent center for UI/UX Design Learning</h1>
-      <p>
+      <p id="second">
         UIXwithme is online learning platform that offers various courses for
         Design Development.
       </p>
@@ -21,6 +21,21 @@
       </div>
     </div>
   </div>
+  <div class="who-we-are-section">
+    <div class="image">
+      <img src="../src/assets/Question-Mark.webp" alt="Question?" />
+    </div>
+    <div class="content">
+      <h2>Who We Are?</h2>
+      <p>
+        We are two professional software engineering students from IRAN, named
+        <span>Khashayar Shomali</span> and
+        <span>Mohammad Hossein Khan Mohammadi</span>, who intend to help others
+        interested in the field of <span>UI/UX Design</span> by presenting our
+        learnings for <span>free</span>.
+      </p>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -34,6 +49,7 @@ import Navbar from "./components/Navbar.vue";
   font-family: "Rubik", sans-serif;
 }
 
+/* Hero Section */
 .hero-section {
   height: 550px;
   background: rgb(2, 0, 36);
@@ -91,6 +107,10 @@ import Navbar from "./components/Navbar.vue";
   margin-bottom: 35px;
 }
 
+.hero-section-content #second {
+  opacity: 0.2;
+}
+
 .hero-section-image-buttons {
   display: flex;
   flex-direction: column;
@@ -127,5 +147,39 @@ import Navbar from "./components/Navbar.vue";
 .subscribe-newsletter a {
   text-decoration: none;
   color: white;
+}
+
+/* Who We Are? */
+
+.who-we-are-section {
+  height: 600px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 90px;
+}
+
+.who-we-are-section img {
+  width: 350px;
+  height: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+}
+
+.content h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 24px;
+  margin-top: 10px;
+  line-height: 1.7em;
+}
+
+.content span {
+  font-weight: bold;
 }
 </style>
