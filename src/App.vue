@@ -22,10 +22,10 @@
     </div>
   </div>
   <div class="who-we-are-section">
-    <div class="image">
+    <div class="who-we-are-section-image">
       <img src="../src/assets/Question-Mark.webp" alt="Question?" />
     </div>
-    <div class="content">
+    <div class="who-we-are-section-content">
       <h2>Who We Are?</h2>
       <p>
         We are two professional software engineering students from IRAN, named
@@ -34,6 +34,43 @@
         interested in the field of <span>UI/UX Design</span> by presenting our
         learnings for <span>free</span>.
       </p>
+    </div>
+  </div>
+  <div class="our-services-section">
+    <div class="our-services-section-image">
+      <img
+        src="../src/assets/Portfolio-Khashayar-Shomali.png"
+        alt="Portfolio"
+      />
+    </div>
+    <div class="our-services-section-content">
+      <h2>Good Design is All You Need!</h2>
+      <p>
+        We help businesses to convert their ideas into successful mobile
+        applications and websites through strategy, creativity and technology.
+      </p>
+      <div class="our-services-section-buttons">
+        <button class="view-our-services-button">
+          <span><a href="#">View Our Services</a></span>
+          <span
+            ><a href="#"
+              ><svg
+                style="color: white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                  fill="white"
+                ></path></svg></a
+          ></span>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -108,7 +145,7 @@ import Navbar from "./components/Navbar.vue";
 }
 
 .hero-section-content #second {
-  color: rgba(255, 255, 255, 0.644)
+  color: rgba(255, 255, 255, 0.644);
 }
 
 .hero-section-image-buttons {
@@ -161,25 +198,127 @@ import Navbar from "./components/Navbar.vue";
   padding: 0 90px;
 }
 
-.who-we-are-section img {
+.who-we-are-section-image img {
   width: 350px;
   height: auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   border-radius: 9px;
 }
 
-.content h2 {
-  font-size: 50px;
+.who-we-are-section-content h2 {
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
-.content p {
+.who-we-are-section-content p {
   font-size: 24px;
   margin-top: 10px;
   line-height: 1.7em;
 }
 
-.content span {
+.who-we-are-section-content span {
   font-weight: bold;
 }
+
+/* Good Design is All You Need */
+
+.our-services-section {
+  height: 600px;
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    66deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(141, 153, 174, 1) 0%,
+    rgb(185, 191, 201) 0%,
+    rgba(97, 103, 114, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    66deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(141, 153, 174, 1) 0%,
+    rgba(141, 153, 174, 1) 0%,
+    rgba(97, 103, 114, 1) 100%
+  );
+  background: linear-gradient(
+    66deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(141, 153, 174, 1) 0%,
+    rgba(141, 153, 174, 1) 0%,
+    rgba(97, 103, 114, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#616772",GradientType=1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.our-services-section-image img {
+  width: 550px;
+  height: auto;
+  display: flex;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-services-section-content {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.our-services-section-content h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 70px;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.our-services-section-content p {
+  background-color: white;
+  font-size: 22px;
+  line-height: 30px;
+  max-width: 467px;
+  margin-bottom: 40px;
+}
+
+.view-our-services-button {
+  background-color: transparent;
+  border: 2.5px white solid;
+  border-radius: 50px;
+  border-color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-services-section-buttons button {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.view-our-services-button:hover {
+  background-color: orangered;
+}
+
+.view-our-services-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.view-our-services-button svg {
+  padding-left: 10px;
+}
+
 </style>
