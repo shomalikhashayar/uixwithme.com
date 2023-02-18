@@ -66,10 +66,54 @@
                 <path
                   fill-rule="evenodd"
                   d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-                  fill="white"
+                  fill="orangered"
                 ></path></svg></a
           ></span>
         </button>
+      </div>
+    </div>
+  </div>
+  <div class="our-team-section-container">
+    <div class="caption"><h1>Our Team</h1></div>
+    <div class="our-team-section">
+      <div class="our-team-image-khashayar">
+        <a href="https:github.com/shomalikhashayar"
+          ><img
+            src="../src/assets/Khashayar-Shomali.png"
+            alt="Khashayar Shomali"
+        /></a>
+        <h2>Khashayar Shomali</h2>
+        <p>Senior UI/UX Designer.</p>
+        <div class="social-media-icons">
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-linkedin"></a
+          ></span>
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-instagram"></a
+          ></span>
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-whatsapp"></a
+          ></span>
+        </div>
+      </div>
+
+      <div class="our-team-image-mohammad">
+        <a href="#"
+          ><img src="../src/assets/Mohammad-Hossein.png" alt="Mohammad Hossein"
+        /></a>
+        <h2>Mohammad Hossein</h2>
+        <p>Digital Marketing Specialist.</p>
+        <div class="social-media-icons">
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-linkedin"></a
+          ></span>
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-instagram"></a
+          ></span>
+          <span class="social-media-items"
+            ><a href="#" class="fa fa-whatsapp"></a
+          ></span>
+        </div>
       </div>
     </div>
   </div>
@@ -224,29 +268,7 @@ import Navbar from "./components/Navbar.vue";
 
 .our-services-section {
   height: 600px;
-  background: rgb(2, 0, 36);
-  background: -moz-linear-gradient(
-    66deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(141, 153, 174, 1) 0%,
-    rgb(185, 191, 201) 0%,
-    rgba(97, 103, 114, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    66deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(141, 153, 174, 1) 0%,
-    rgba(141, 153, 174, 1) 0%,
-    rgba(97, 103, 114, 1) 100%
-  );
-  background: linear-gradient(
-    66deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(141, 153, 174, 1) 0%,
-    rgba(141, 153, 174, 1) 0%,
-    rgba(97, 103, 114, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#616772",GradientType=1);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,6 +282,7 @@ import Navbar from "./components/Navbar.vue";
   border-radius: 9px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
 }
 
 .our-services-section-content {
@@ -288,9 +311,9 @@ import Navbar from "./components/Navbar.vue";
 
 .view-our-services-button {
   background-color: transparent;
-  border: 2.5px white solid;
+  border: 2.5px orangered solid;
   border-radius: 50px;
-  border-color: white;
+  border-color: orangered;
   font-size: 14px;
   cursor: pointer;
   width: 180px;
@@ -305,20 +328,103 @@ import Navbar from "./components/Navbar.vue";
   margin-bottom: 10px;
 }
 
-.view-our-services-button:hover {
-  background-color: orangered;
-}
-
 .view-our-services-button a {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: white;
+  color: orangered;
 }
 
 .view-our-services-button svg {
   padding-left: 10px;
 }
 
+/* Our Team Section */
+
+.our-team-section-container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.our-team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  gap: 250px;
+}
+
+.our-team-image-khashayar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-icons .social-media-items {
+  padding: 0 4px;
+}
+
+.fa {
+  padding: 7px;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa:hover {
+  background: #4a4e56;
+}
+
+.fa-instagram {
+  background: #616772;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #616772;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #616772;
+  color: white;
+}
+
+.our-team-image-mohammad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.our-team-image-khashayar img {
+  border: 2px solid #000000;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.our-team-image-mohammad img {
+  border: 2px solid #000000;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
 </style>

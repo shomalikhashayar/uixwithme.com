@@ -110,6 +110,6 @@
 }
 
 .view-portfolio:hover {
-  background-color: #616772;
+  background-color: #4a4e56;
 }
 </style>
